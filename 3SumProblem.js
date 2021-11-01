@@ -24,9 +24,8 @@ for (let i = 0; i <= num.length - 3; i++) {
         }
     }
 }
-let unique = Array.from(new Set(sum.map(JSON.stringify)), JSON.parse)
-console.log(unique)
-return unique
+let unique = new Set([...sum])
+return [...unique]
 }
 
 
